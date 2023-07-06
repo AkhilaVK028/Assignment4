@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+  <div class="navbar">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Gallery">Gallery</a>
+    <div class="search">
+      <form action="/search">
+        <input type="text" placeholder="Search...">
+        
+      </form>
+    </div>
+  </div>
+  <div class="overlay">
+    <div class="form-group">
+      <h2>Login</h2>
+      <form onsubmit="return validationForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password"><br>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+
+    <div class="logo-use">
+      <a href="https://www.facebook.com/akhilavk.vk.9">
+        <img src="facebook.jfif" alt="Image facebook" class="logo"></a>
+      <a href="https://mail.google.com/mail">
+        <img src="gmail.jfif" alt="Image gmail" class="logo"></a>
+      <a href="https://www.twitter.com">
+        <img  src="twitterimage.png" alt="Image twitter" class="logo"></a>
+    </div>
+  </div>
+  <script src="login.js"></script>
+
+
+  <!-- <script>
+    function validationForm() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username.length <= 4 || password.length <= 8) {
+        alert('Username should be greater than 4 characters and password should be greater than 8 characters.');
+        return false;
+      }
+
+      if (username.trim() === '' || password.trim() === '') {
+        alert('Username and password cannot be empty.');
+        return false;
+      }
+
+      return true;
+    }
+  </script>  -->
+</body>
+
+
+</html>
+
